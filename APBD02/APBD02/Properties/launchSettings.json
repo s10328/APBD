@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "APBD02": {
+      "commandName": "Project",
+      "commandLineArgs": "dane.csv\r\n„C:\\Users\\Anna Wyszyńska\\Desktop\\Damian\\csvData.csv” json"
+    }
+  }
+}

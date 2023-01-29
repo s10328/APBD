@@ -7,4 +7,30 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Compile Remove="Data\**" />
+    <EmbeddedResource Remove="Data\**" />
+    <None Remove="Data\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="dane.csv" />
+    <None Remove="log.txt" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="dane.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="log.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="APBD02">
+      <HintPath>bin\Debug\net6.0\APBD02.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
 </Project>
